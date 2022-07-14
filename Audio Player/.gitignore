@@ -60,3 +60,7 @@ fmod_editor.log
 # Dev scene - exclude an info.txt file for help adding a new scene and ensure the folder makes it to source control
 [Aa]ssets/Scenes/Dev/*
 ![Aa]ssets/Scenes/Dev/info.txt
+
+# Audio files are too large to include
+[Aa]ssets/Audio/*
+![Aa]ssets/Audio/.gitkeep
