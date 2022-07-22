@@ -231,7 +231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.78431374, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -749,7 +749,7 @@ GameObject:
   - component: {fileID: 573764699}
   - component: {fileID: 573764698}
   m_Layer: 5
-  m_Name: Remove
+  m_Name: StopAll
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -821,7 +821,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1031945082}
         m_TargetAssemblyTypeName: TrackControllers, Assembly-CSharp
-        m_MethodName: OnRemove
+        m_MethodName: OnStopAll
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -844,7 +844,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.78431374, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1037,6 +1037,28 @@ MonoBehaviour:
     name: Tavern
   - audioClip: {fileID: 8300000, guid: 23c5193cfb218324eb40e9126d05e798, type: 3}
     name: Rain
+  - audioClip: {fileID: 8300000, guid: 9756f49af5abb8f4389fb83a6469b60c, type: 3}
+    name: Beach
+  - audioClip: {fileID: 8300000, guid: 2b75fdb360f473b4c83f2568572937d0, type: 3}
+    name: Bard - Lute
+  - audioClip: {fileID: 8300000, guid: 46e16b61edb46c24784231e552532c49, type: 3}
+    name: Airship in Storm
+  - audioClip: {fileID: 8300000, guid: e76916ebc20ae5a4c96a24ab7c0710ca, type: 3}
+    name: Haunted Mansion
+  - audioClip: {fileID: 8300000, guid: d81c63226ce7c7d4b89a921025b81e9a, type: 3}
+    name: Forested Cliff
+  - audioClip: {fileID: 8300000, guid: d7e8de5688ef34a41b17fa940116e8f3, type: 3}
+    name: Harbour
+  - audioClip: {fileID: 8300000, guid: 2e419bea00242664abe7cdea61d66452, type: 3}
+    name: Harbour - Nighttime
+  - audioClip: {fileID: 8300000, guid: 297b1661bda72eb49a67a2e06a6c0c6f, type: 3}
+    name: Market
+  - audioClip: {fileID: 8300000, guid: 35eb2d15328991748ad2962678173336, type: 3}
+    name: Combat Music 1
+  - audioClip: {fileID: 8300000, guid: 5113a9836e3bff7428b1e59930841dde, type: 3}
+    name: Combat Music 2
+  - audioClip: {fileID: 8300000, guid: d038529e3a6d38044ad29f5df021014d, type: 3}
+    name: Combat Music 3
 --- !u!4 &951520495
 Transform:
   m_ObjectHideFlags: 0
@@ -1121,7 +1143,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Remove
+  m_Text: Stop All
 --- !u!222 &980180759
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1346,6 +1368,12 @@ MonoBehaviour:
     name: Banging on door
   - audioClip: {fileID: 8300000, guid: d9feabba5728ce94fad4196b8bd8700b, type: 3}
     name: Thunder
+  - audioClip: {fileID: 8300000, guid: 3ffa0e6fc1460d542bb1e16b692f1f9d, type: 3}
+    name: Scream
+  - audioClip: {fileID: 8300000, guid: 42f513ed593161548989f5c932e515e2, type: 3}
+    name: Welcome to your death
+  - audioClip: {fileID: 8300000, guid: 9fa39a41fb9242245b3ecdefc4d406ba, type: 3}
+    name: Council bells
 --- !u!4 &1265470006
 Transform:
   m_ObjectHideFlags: 0
