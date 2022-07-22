@@ -1342,6 +1342,10 @@ MonoBehaviour:
     name: Bubble
   - audioClip: {fileID: 8300000, guid: 9613d9ab53f358746935b8d261aaf2fc, type: 3}
     name: Bang
+  - audioClip: {fileID: 8300000, guid: 84d2218fc869885438c4b316e8643793, type: 3}
+    name: Banging on door
+  - audioClip: {fileID: 8300000, guid: d9feabba5728ce94fad4196b8bd8700b, type: 3}
+    name: Thunder
 --- !u!4 &1265470006
 Transform:
   m_ObjectHideFlags: 0
