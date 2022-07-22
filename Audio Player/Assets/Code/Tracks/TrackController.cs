@@ -23,6 +23,16 @@ public class TrackController : MonoBehaviour
         TryPlayDropdownTrack();
     }
 
+    public void OnRemove()
+    {
+        TrackControllers.Instance.Remove(this);
+    }
+
+    public void Stop()
+    {
+        slider.value = 0;
+    }
+
     private void TryPlayDropdownTrack()
     {
         string trackName = dropdown.GetValue();

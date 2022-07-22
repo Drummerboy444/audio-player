@@ -4,20 +4,29 @@ using UnityEngine;
 
 public class TrackControllers : MonoBehaviour
 {
+    public static TrackControllers Instance { get; private set; }
+    
     [SerializeField] private TrackController trackControllerPrefab;
 
     private readonly List<TrackController> trackControllers = new List<TrackController>();
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     public void OnAdd()
     {
         trackControllers.Add(Instantiate(trackControllerPrefab, transform));
     }
 
-    public void OnRemove()
+    public void OnStopAll()
     {
-        if (trackControllers.Count == 0) return;
+        trackControllers.ForEach(trackController => trackController.Stop());
+    }
 
-        TrackController trackController = trackControllers.Last();
+    public void Remove(TrackController trackController)
+    {
         Destroy(trackController.gameObject);
         trackControllers.Remove(trackController);
     }
